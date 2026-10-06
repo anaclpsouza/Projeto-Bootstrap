@@ -1,210 +1,26 @@
-# ProjetoBootstrap
+# TaskSync
 
-# 🧭 ETAPA 1 — HEADER & NAVBAR (SEM JS)
-Requisitos:
+Um gerenciador de tarefas focado em produtividade. O projeto está sendo construído utilizando **Bootstrap 5**, sem uso de JavaScript do Bootstrap ou qualquer tipo de script JS.
 
-Navbar responsiva
+## Estrutura e Páginas Atuais
 
-Logo
+1. **Página Inicial (`index.html`)**
 
-Menu horizontal (desktop)
+## Classes Bootstrap Utilizadas 
 
-Menu vertical (mobile)
+O objetivo principal foi respeitar ao máximo o framework, utilizando suas classes utilitárias e semânticas em vez de criar CSS customizado:
 
-Uso obrigatório de:
+- **Layout e Utilitários Flexbox:** `.container`, `.d-flex`, `.align-items-center`, `.justify-content-lg-end`, `.ms-auto`, `.me-2`, `.gap-2`, `.gap-3`, `.mt-3`. 
+- **Componentes Base da Navbar:** `.navbar`, `.navbar-expand-lg`, `.navbar-brand`, `.navbar-nav`, `.nav-item`, `.nav-link`, `.collapse`, `.navbar-collapse`, `.bg-transparent`, `.border-bottom`, `.py-3`.
+- **Botões e Auxiliares:** `.btn`, `.btn-outline-dark`.
+- **Tipografia e Estilo:** `.fw-bold`, `.fw-medium`, `.fs-4`, `.fs-2`, `.text-primary`, `.text-body`, `.rounded-3`, `.shadow-sm`.
+- **Responsividade de Visibilidade:** `.d-lg-none`, `.d-lg-flex` para controlar a barra de navegação no formato desktop x mobile.
 
-navbar
+## CSS Customizado: Onde e Por Quê?
 
-navbar-expand-*
+- **Paleta Própria e Tipografia:** Em vez de criar classes soltas como `.btn-custom`, optei por injetar a paleta na raiz do Bootstrap, sobrescrevendo as variáveis `--bs-primary`, `--bs-secondary` e `--bs-font-sans-serif` diretamente no `:root`. Dessa forma, todos os botões e textos são coloridos organicamente pelas classes nativas do framework (como `.text-primary`).
+- **Menu Mobile sem JS:** Implementei o CSS *Checkbox Hack*. Foi necessária uma media query (`max-width: 991.98px`) para exibir dinamicamente a div `.mobile-menu-content` usando o seletor condicional `~`.
 
-collapse
+## Principais Dificuldades 
 
-d-*
-
-📌 Desafio
-Como o Bootstrap JS é proibido, o aluno deve:
-
-Criar comportamento visual alternativo usando apenas classes responsivas
-
-Justificar em comentário HTML
-
-# 🖼️ ETAPA 2 — HERO SECTION
-
-Criar uma seção inicial com:
-
-Headline
-
-Subheadline
-
-Dois botões
-
-Imagem ilustrativa
-
-Regras:
-
-Usar row + col-*
-
-Alterar ordem dos elementos por breakpoint
-
-Centralizar verticalmente usando utilitários
-
-# 🧱 ETAPA 3 — SEÇÃO DE CONTEÚDO 
-
-Criar 12 cards, com:
-
-Título
-
-Texto
-
-Badge
-
-Botão
-
-Regras:
-
-Layout:
-
-1 coluna (mobile)
-
-2 colunas (tablet)
-
-4 colunas (desktop)
-
-Uso obrigatório de:
-
-g-*
-
-h-100
-
-d-flex
-
-flex-column
-
-# 📊 ETAPA 4 — TABELA PROFISSIONAL
-
-Criar uma tabela com:
-
-Cabeçalho destacado
-
-Ícones via Bootstrap Icons (CDN permitido)
-
-Linhas alternadas
-
-Hover
-
-Regras:
-
-table-responsive
-
-Sem quebrar layout em mobile
-
-# 🧾 ETAPA 5 — FORMULÁRIOS (SEM VALIDAÇÃO JS)
-
-Criar 2 formulários grandes:
-
-Formulário de Cadastro
-
-Inputs variados
-
-Radios
-
-Checkbox
-
-Select
-
-Input Group
-
-Formulário de Contato
-
-Layout em grid
-
-Campos alinhados
-
-Textarea
-
-📌 Usar estados visuais:
-
-is-valid
-
-is-invalid
-
-form-text
-
-# 🪟 ETAPA 6 — MODAIS
-
-❌ JS proibido
-✔ CSS permitido
-
-Desafio:
-
-Simular um modal usando:
-
-position-fixed
-
-z-index
-
-Utilitários Bootstrap
-
-Checkbox hack (HTML + CSS)
-
-# 📱 ETAPA 7 — RESPONSIVIDADE EXTREMA
-Obrigatório:
-
-Usar:
-
-d-none
-
-d-sm-*
-
-d-md-*
-
-d-lg-*
-
-Conteúdo que:
-
-Some no mobile
-
-Muda posição
-
-Troca alinhamento
-
-# 🎨 ETAPA 8 — SISTEMA DE DESIGN
-Regras:
-
-Usar no mínimo:
-
-5 cores do Bootstrap
-
-4 variações de botão
-
-3 badges diferentes
-
-Coerência visual obrigatória
-
-# 🧠 ETAPA 9 — DASHBOARD (SEM JS)
-
-Criar um dashboard com:
-
-Sidebar fixa (desktop)
-
-Sidebar escondida (mobile)
-
-Cards de métricas
-
-Tabela
-
-Alerts
-
-📌 Sidebar deve usar Grid + Flex, não position absolute.
-
-# 📝 ETAPA 10 — DOCUMENTAÇÃO OBRIGATÓRIA
-
-Criar um arquivo README.md contendo:
-
-Explicação de cada página
-
-Quais classes Bootstrap foram usadas
-
-Onde foi necessário CSS próprio e por quê
-
-Principais dificuldades
+1. **Menu Hamburguer Responsivo:** A navbar nativa do Bootstrap é completamente dependente de seu arquivo JavaScript para alternar a exibição da classe `.collapse`. Descartar o JS exigiu adaptar o código com `<label>`s responsivos conectados a um `input[type="checkbox"]`, que utiliza o estado `:checked` no CSS para engatilhar uma animação `slideDown` de forma autônoma.
