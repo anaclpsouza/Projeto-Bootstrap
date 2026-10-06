@@ -10,11 +10,11 @@ Um gerenciador de tarefas focado em produtividade. O projeto está sendo constru
 
 O objetivo principal foi respeitar ao máximo o framework, utilizando suas classes utilitárias e semânticas em vez de criar CSS customizado:
 
-- **Layout e Utilitários Flexbox:** `.container`, `.d-flex`, `.align-items-center`, `.justify-content-lg-end`, `.ms-auto`, `.me-2`, `.gap-2`, `.gap-3`, `.mt-3`. 
-- **Componentes Base da Navbar:** `.navbar`, `.navbar-expand-lg`, `.navbar-brand`, `.navbar-nav`, `.nav-item`, `.nav-link`, `.collapse`, `.navbar-collapse`, `.bg-transparent`, `.border-bottom`, `.py-3`.
-- **Botões e Auxiliares:** `.btn`, `.btn-outline-dark`.
-- **Tipografia e Estilo:** `.fw-bold`, `.fw-medium`, `.fs-4`, `.fs-2`, `.text-primary`, `.text-body`, `.rounded-3`, `.shadow-sm`.
-- **Responsividade de Visibilidade:** `.d-lg-none`, `.d-lg-flex` para controlar a barra de navegação no formato desktop x mobile.
+- **Layout e Utilitários Flexbox:** `.container`, `.row`, `.col-lg-6`, `.order-1`, `.order-2`, `.order-lg-1`, `.order-lg-2`, `.flex-column`, `.flex-sm-row`, `.d-flex`, `.align-items-center`, `.justify-content-center`, `.justify-content-lg-start`, `.justify-content-lg-end`, `.ms-auto`, `.me-2`, `.gap-2`, `.gap-3`, `.mt-3`, `.mt-4`, `.mt-lg-0`, `.my-lg-5`, `.py-3`, `.py-5`, `.px-4`. 
+- **Componentes Base da Navbar:** `.navbar`, `.navbar-expand-lg`, `.navbar-brand`, `.navbar-nav`, `.nav-item`, `.nav-link`, `.collapse`, `.navbar-collapse`, `.bg-transparent`, `.border-bottom`.
+- **Botões e Auxiliares:** `.btn`, `.btn-primary`, `.btn-outline-dark`, `.btn-lg`.
+- **Tipografia e Estilo:** `.display-4`, `.lead`, `.fw-bold`, `.fw-medium`, `.fs-4`, `.fs-2`, `.text-primary`, `.text-body`, `.text-body-secondary`, `.text-center`, `.text-lg-start`, `.rounded-3`, `.shadow-sm`, `.img-fluid`, `.w-100`.
+- **Responsividade de Visibilidade:** `.d-lg-none`, `.d-lg-flex` para controlar a exibição em diferentes breakpoints.
 
 ## CSS Customizado: Onde e Por Quê?
 

@@ -73,6 +73,22 @@
     object-fit: cover;
 }
 
+/* Força o btn-primary a usar o nosso rosa e ignorar o azul padrão */
+.btn-primary {
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-color: #fff;
+    --bs-btn-hover-bg: #E06093; /* Tom ligeiramente mais escuro para hover */
+    --bs-btn-hover-border-color: #E06093;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-active-bg: #CC5685;
+    --bs-btn-active-border-color: #CC5685;
+    --bs-btn-active-color: #fff;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: #fff;
+}
+
 .menu-toggler {
     cursor: pointer;
 }
