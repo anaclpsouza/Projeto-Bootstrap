@@ -125,3 +125,52 @@
     border-color: var(--bs-primary) !important;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; /* Mesma sombra do .shadow do Bootstrap */
 }
+
+/* ==========================================================================
+   Modais sem JS (Etapa 6)
+   ========================================================================== */
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.custom-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.custom-modal-dialog {
+    position: relative;
+    z-index: 1051;
+    width: 100%;
+    max-width: 500px;
+    padding: 1.5rem;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    margin: 1rem;
+}
+
+/* O seletor adjacente (+) liga o checkbox ao modal que vem logo a seguir */
+.modal-state:checked + .custom-modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-state:checked + .custom-modal .custom-modal-dialog {
+    transform: translateY(0);
+}

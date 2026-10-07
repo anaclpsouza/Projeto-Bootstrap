@@ -23,8 +23,10 @@ Meu objetivo principal foi respeitar ao máximo o framework, utilizando suas cla
 
 - **Paleta Própria e Tipografia:** Em vez de criar classes soltas como `.btn-custom`, optei por injetar a paleta na raiz do Bootstrap, sobrescrevendo as variáveis `--bs-primary`, `--bs-secondary` e `--bs-font-sans-serif` diretamente no `:root`. Dessa forma, todos os botões e textos são coloridos organicamente pelas classes nativas do framework (como `.text-primary`).
 - **Menu Mobile sem JS:** Implementei o CSS *Checkbox Hack*. Foi necessária uma media query (`max-width: 991.98px`) para exibir dinamicamente a div `.mobile-menu-content` usando o seletor condicional `~`.
+- **Modais Nativos (Sem JS):** Reutilizei a lógica do *Checkbox Hack*, conectando inputs escondidos aos componentes visuais por meio do seletor adjacente `+`. O fundo escuro (`.custom-modal-backdrop`) foi construído com a tag `<label>`, permitindo que um clique fora do modal desmarque o input e oculte o painel branco na mesma hora, gerenciando os índices de profundidade (`z-index`) para sobrepor a interface principal.
 - **Sombra para SVG (drop-shadow):** O Bootstrap nativo usa `box-shadow` em suas classes `.shadow`, o que gera uma caixa quadrada ao redor de imagens sem fundo. Para contornar e sombrear a logo SVG, criei a classe `.drop-shadow-lg` que utiliza a propriedade `filter: drop-shadow()`.
 
 ## Principais Dificuldades 
 
 1. **Menu Hamburguer Responsivo:** A navbar nativa do Bootstrap é completamente dependente de seu arquivo JavaScript para alternar a exibição da classe `.collapse`. Descartar o JS exigiu adaptar o código com `<label>`s responsivos conectados a um `input[type="checkbox"]`, que utiliza o estado `:checked` no CSS para engatilhar uma animação `slideDown` de forma autônoma.
+2. **Sistema de Modais Estáticos:** Emular o comportamento complexo de um Modal (abrir, focar, fechar no "X" e fechar ao clicar fora) sem Javascript demandou estruturação criativa do DOM. Tive que posicionar o HTML no fim do documento com `position: fixed` e utilizar `<label>` como máscara de fundo para fechar a janela ao detectar cliques fora da área de conteúdo.
