@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>TaskSync | Gestão Eficiente </title>
 </head>
+
 <body>
     <div class="theme-wrapper">
         <header>
@@ -37,7 +39,8 @@
                             </li>
                         </ul>
                         <div class="d-flex ms-lg-4 mt-3 mt-lg-0 gap-2 align-items-center">
-                            <button class="btn btn-outline-dark" type="button"><i class="bi bi-person-fill h4"></i></button>
+                            <button class="btn btn-outline-dark" type="button"><i
+                                    class="bi bi-person-fill h4"></i></button>
                         </div>
                     </div>
                 </div>
@@ -51,16 +54,26 @@
                         <div class="col-lg-6 order-2 order-lg-1 text-center text-lg-start mt-4 mt-lg-0">
                             <h1 class="display-4 fw-bold text-primary mb-3">Bem-vinda de volta, Ana!</h1>
                             <p class="lead text-body-secondary mb-4">
-                                Aqui está o seu painel de controle. Você tem <strong>3 projetos</strong> aguardando revisão e <strong>5 tarefas</strong> concluídas com sucesso nesta semana.
+                                Aqui está o seu painel de controle. Você tem <strong>3 projetos</strong> aguardando
+                                revisão e <strong>5 tarefas</strong> concluídas com sucesso nesta semana.
                             </p>
-                            <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                                <button class="btn btn-primary btn-lg px-4 fw-medium" type="button"><i class="bi bi-plus-lg me-2"></i>Novo Projeto</button>
-                                <button class="btn btn-outline-dark btn-lg px-4 fw-medium" type="button"><i class="bi bi-graph-up me-2"></i>Gerar Relatório</button>
+                            <div
+                                class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                                <button class="btn btn-primary btn-lg px-4 fw-medium" type="button"><i
+                                        class="bi bi-plus-lg me-2"></i>Novo Projeto</button>
+                                <button class="btn btn-outline-dark btn-lg px-4 fw-medium" type="button"><i
+                                        class="bi bi-graph-up me-2"></i>Gerar Relatório</button>
                             </div>
                         </div>
-        
+
                         <div class="col-lg-6 order-1 order-lg-2 text-center">
-                            <img src="img/logo.svg" alt="Ilustração TaskSync" class="img-fluid w-100 drop-shadow-lg">
+                            <div class="row justify-content-center">
+                                <!-- Mobile: 66% da tela (col-8), Tablet: 50% da tela (col-md-6), Desktop: 100% da coluna pai (col-lg-12) -->
+                                <div class="col-8 col-md-6 col-lg-12">
+                                    <img src="img/logo.svg" alt="Ilustração TaskSync"
+                                        class="img-fluid w-100 drop-shadow-lg">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,149 +86,161 @@
                         <h2 class="display-6 fw-bold text-primary">Projetos em Destaque</h2>
                         <p class="text-body-secondary">Acompanhe as demandas e gerencie o fluxo de trabalho</p>
                     </div>
-                    
+
                     <!-- Row com gap dinâmico (g-4) -->
                     <div class="row g-4">
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-primary mb-2">Desenvolvimento</span>
                                         <h5 class="card-title fw-bold">App Mobile</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Criação do aplicativo nativo para Android e iOS com foco em UI/UX.</p>
+                                    <p class="card-text text-body-secondary">Criação do aplicativo nativo para Android e
+                                        iOS com foco em UI/UX.</p>
                                     <a href="#" class="btn btn-outline-primary mt-auto fw-medium">Ver Detalhes</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-success mb-2">Concluído</span>
                                         <h5 class="card-title fw-bold">Migração Cloud</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Transferência de todos os bancos de dados legado para a nuvem da AWS.</p>
+                                    <p class="card-text text-body-secondary">Transferência de todos os bancos de dados
+                                        legado para a nuvem da AWS.</p>
                                     <a href="#" class="btn btn-dark mt-auto fw-medium">Relatório Final</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-warning mb-2">Pausado</span>
                                         <h5 class="card-title fw-bold">Redesign de Marca</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Estudos para a nova identidade visual da empresa e guia de estilos.</p>
+                                    <p class="card-text text-body-secondary">Estudos para a nova identidade visual da
+                                        empresa e guia de estilos.</p>
                                     <a href="#" class="btn btn-secondary mt-auto fw-medium">Retomar Projeto</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-info mb-2">Revisão</span>
                                         <h5 class="card-title fw-bold">Campanha Q4</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Materiais de marketing e estratégia de mídia paga para o último trimestre.</p>
+                                    <p class="card-text text-body-secondary">Materiais de marketing e estratégia de
+                                        mídia paga para o último trimestre.</p>
                                     <a href="#" class="btn btn-outline-dark mt-auto fw-medium">Avaliar Mídia</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-primary mb-2">Desenvolvimento</span>
                                         <h5 class="card-title fw-bold">API Gateway</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Construção do ponto único de entrada para os microsserviços internos.</p>
+                                    <p class="card-text text-body-secondary">Construção do ponto único de entrada para
+                                        os microsserviços internos.</p>
                                     <a href="#" class="btn btn-outline-primary mt-auto fw-medium">Ver Detalhes</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-success mb-2">Concluído</span>
                                         <h5 class="card-title fw-bold">Onboarding</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Novo fluxo automatizado para cadastro e entrada de novos usuários na plataforma.</p>
+                                    <p class="card-text text-body-secondary">Novo fluxo automatizado para cadastro e
+                                        entrada de novos usuários na plataforma.</p>
                                     <a href="#" class="btn btn-dark mt-auto fw-medium">Relatório Final</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-warning mb-2">Pausado</span>
                                         <h5 class="card-title fw-bold">Pesquisa Setorial</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Levantamento de dados e análise dos concorrentes diretos no setor financeiro.</p>
+                                    <p class="card-text text-body-secondary">Levantamento de dados e análise dos
+                                        concorrentes diretos no setor financeiro.</p>
                                     <a href="#" class="btn btn-secondary mt-auto fw-medium">Retomar Projeto</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-info mb-2">Revisão</span>
                                         <h5 class="card-title fw-bold">Políticas de Uso</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Atualização dos termos de uso visando conformidade com as novas leis de proteção.</p>
+                                    <p class="card-text text-body-secondary">Atualização dos termos de uso visando
+                                        conformidade com as novas leis de proteção.</p>
                                     <a href="#" class="btn btn-outline-dark mt-auto fw-medium">Avaliar Termos</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-primary mb-2">Desenvolvimento</span>
                                         <h5 class="card-title fw-bold">Módulo Checkout</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Integração com gateway de pagamento Stripe e suporte a assinaturas recorrentes.</p>
+                                    <p class="card-text text-body-secondary">Integração com gateway de pagamento Stripe
+                                        e suporte a assinaturas recorrentes.</p>
                                     <a href="#" class="btn btn-outline-primary mt-auto fw-medium">Ver Detalhes</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-success mb-2">Concluído</span>
                                         <h5 class="card-title fw-bold">Treinamento</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Sessões de capacitação da equipe técnica para adoção do novo stack tecnológico.</p>
+                                    <p class="card-text text-body-secondary">Sessões de capacitação da equipe técnica
+                                        para adoção do novo stack tecnológico.</p>
                                     <a href="#" class="btn btn-dark mt-auto fw-medium">Relatório Final</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-warning mb-2">Pausado</span>
                                         <h5 class="card-title fw-bold">Internacional</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Internacionalização do sistema para suportar nativamente os idiomas inglês e espanhol.</p>
+                                    <p class="card-text text-body-secondary">Internacionalização do sistema para
+                                        suportar nativamente os idiomas inglês e espanhol.</p>
                                     <a href="#" class="btn btn-secondary mt-auto fw-medium">Retomar Projeto</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="card h-100 border-0 shadow-sm">
+                            <div class="card h-100 shadow-sm">
                                 <div class="card-body d-flex flex-column">
                                     <div class="mb-2">
                                         <span class="badge text-bg-info mb-2">Revisão</span>
                                         <h5 class="card-title fw-bold">Otimização SEO</h5>
                                     </div>
-                                    <p class="card-text text-body-secondary">Melhoria de performance e auditoria de palavras-chave para o portal principal.</p>
+                                    <p class="card-text text-body-secondary">Melhoria de performance e auditoria de
+                                        palavras-chave para o portal principal.</p>
                                     <a href="#" class="btn btn-outline-dark mt-auto fw-medium">Avaliar Métricas</a>
                                 </div>
                             </div>
@@ -226,4 +251,5 @@
         </main>
     </div>
 </body>
+
 </html>
