@@ -3,7 +3,12 @@
 
 :root {
     --brand-primary: #FF78AC;
+    --brand-primary-hover: #E06093;
+    --brand-primary-active: #CC5685;
+
     --brand-secondary: #367588;
+    --brand-secondary-hover: #2b5d6c;
+    --brand-secondary-active: #204550;
 
     --bs-primary: var(--brand-primary);
     --bs-primary-rgb: 255, 120, 172;
@@ -36,7 +41,6 @@
 }
 
 
-
 /* ==========================================================================
    Menu Mobile Hack (Desafio Etapa 1)
    ========================================================================== */
@@ -49,7 +53,7 @@
         display: block !important;
         padding: 1rem 0;
         margin-top: 0.5rem;
-        border-top: 1px solid rgba(128, 128, 128, 0.2);
+        border-top: 1px solid var(--bs-border-color);
         animation: slideDown 0.3s ease forwards;
     }
 
@@ -73,20 +77,35 @@
     object-fit: cover;
 }
 
-/* Força o btn-primary a usar o nosso rosa e ignorar o azul padrão */
+
 .btn-primary {
     --bs-btn-bg: var(--bs-primary);
     --bs-btn-border-color: var(--bs-primary);
-    --bs-btn-color: #fff;
-    --bs-btn-hover-bg: #E06093; /* Tom ligeiramente mais escuro para hover */
-    --bs-btn-hover-border-color: #E06093;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-active-bg: #CC5685;
-    --bs-btn-active-border-color: #CC5685;
-    --bs-btn-active-color: #fff;
+    --bs-btn-color: var(--bs-white, #fff);
+    --bs-btn-hover-bg: var(--brand-primary-hover); 
+    --bs-btn-hover-border-color: var(--brand-primary-hover);
+    --bs-btn-hover-color: var(--bs-white, #fff);
+    --bs-btn-active-bg: var(--brand-primary-active);
+    --bs-btn-active-border-color: var(--brand-primary-active);
+    --bs-btn-active-color: var(--bs-white, #fff);
     --bs-btn-disabled-bg: var(--bs-primary);
     --bs-btn-disabled-border-color: var(--bs-primary);
-    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-color: var(--bs-white, #fff);
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--bs-secondary);
+    --bs-btn-border-color: var(--bs-secondary);
+    --bs-btn-color: var(--bs-white, #fff);
+    --bs-btn-hover-bg: var(--brand-secondary-hover);
+    --bs-btn-hover-border-color: var(--brand-secondary-hover);
+    --bs-btn-hover-color: var(--bs-white, #fff);
+    --bs-btn-active-bg: var(--brand-secondary-active);
+    --bs-btn-active-border-color: var(--brand-secondary-active);
+    --bs-btn-active-color: var(--bs-white, #fff);
+    --bs-btn-disabled-bg: var(--bs-secondary);
+    --bs-btn-disabled-border-color: var(--bs-secondary);
+    --bs-btn-disabled-color: var(--bs-white, #fff);
 }
 
 .menu-toggler {
