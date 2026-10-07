@@ -279,9 +279,9 @@
                                             <td><span class="badge text-bg-success">Concluído</span></td>
                                             <td class="px-4">
                                                 <div class="d-flex gap-2">
-                                                    <button class="btn btn-primary" title="Visualizar"><i class="bi bi-eye"></i></button>
+                                                    <label for="modalView1" class="btn btn-primary" title="Visualizar"><i class="bi bi-eye"></i></label>
                                                     <button class="btn btn-secondary" title="Editar"><i class="bi bi-pencil"></i></button>
-                                                    <button class="btn btn-danger" title="Excluir"><i class="bi bi-trash"></i></button>
+                                                    <label for="modalDelete1" class="btn btn-danger" title="Excluir"><i class="bi bi-trash"></i></label>
                                                 </div>
                                             </td>
                                         </tr>
@@ -332,6 +332,43 @@
                 </div>
             </section>
         </main>
+    </div>
+
+    <!-- ETAPA 6 - MODAIS -->
+    <!-- Modal View 1 -->
+    <input type="checkbox" id="modalView1" class="modal-state d-none">
+    <div class="custom-modal">
+        <label class="custom-modal-backdrop" for="modalView1"></label>
+        <div class="custom-modal-dialog bg-body rounded-3 shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0 fw-bold">Detalhes da Tarefa</h4>
+                <label class="btn-close" for="modalView1"></label>
+            </div>
+            <p><strong>Tarefa:</strong> Deploy da Landing Page</p>
+            <p><strong>Responsável:</strong> Ana Souza</p>
+            <p><strong>Status:</strong> <span class="badge text-bg-success">Concluído</span></p>
+            <p><strong>Descrição:</strong> Finalização do deploy do projeto na Vercel e configuração do domínio personalizado da plataforma.</p>
+            <div class="text-end mt-4">
+                <label class="btn btn-primary" for="modalView1">Entendi</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Delete 1 -->
+    <input type="checkbox" id="modalDelete1" class="modal-state d-none">
+    <div class="custom-modal">
+        <label class="custom-modal-backdrop" for="modalDelete1"></label>
+        <div class="custom-modal-dialog bg-body rounded-3 shadow">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="mb-0 fw-bold text-danger">Confirmar Exclusão</h4>
+                <label class="btn-close" for="modalDelete1"></label>
+            </div>
+            <p>Tem certeza que deseja excluir esta atividade? Esta ação <strong>não pode ser desfeita</strong>.</p>
+            <div class="text-end mt-4">
+                <label class="btn btn-secondary me-2" for="modalDelete1">Cancelar</label>
+                <label class="btn btn-danger" for="modalDelete1">Sim, Excluir</label>
+            </div>
+        </div>
     </div>
 </body>
 
