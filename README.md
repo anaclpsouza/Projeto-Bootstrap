@@ -4,18 +4,20 @@ Um gerenciador de tarefas focado em produtividade. O projeto está sendo constru
 
 ## Estrutura e Páginas Atuais
 
-1. **Página Inicial (`index.html`)**
+1. **Página Inicial (`index.html`)**: Contém a Hero Section, Cards de Projetos com layout de Grid responsivo, e uma Tabela de Atividades moderna.
+2. **Gestão de Tarefas (`pages/tarefas.html`)**: Página dedicada para criação de novas tarefas e alocação de membros, estruturada com formulários complexos e responsivos.
 
 ## Classes Bootstrap Utilizadas 
 
 Meu objetivo principal foi respeitar ao máximo o framework, utilizando suas classes utilitárias e semânticas em vez de criar CSS customizado:
 
-- **Layout e Utilitários Flexbox:** `.container`, `.row`, `.col-12`, `.col-md-6`, `.col-lg-3`, `.col-lg-6`, `.g-4`, `.order-1`, `.order-2`, `.order-lg-1`, `.order-lg-2`, `.flex-column`, `.flex-sm-row`, `.d-flex`, `.align-items-center`, `.justify-content-center`, `.justify-content-lg-start`, `.justify-content-lg-end`, `.ms-auto`, `.me-2`, `.gap-2`, `.gap-3`, `.mt-3`, `.mt-4`, `.mt-lg-0`, `.mt-auto`, `.mb-2`, `.mb-3`, `.mb-4`, `.mb-5`, `.my-lg-5`, `.py-3`, `.py-5`, `.px-4`, `.h-100`. 
+- **Layout e Utilitários Flexbox:** `.container`, `.row`, `.col-12`, `.col-md-6`, `.col-md-8`, `.col-md-4`, `.col-lg-3`, `.col-lg-6`, `.g-3`, `.g-4`, `.order-1`, `.order-2`, `.order-lg-1`, `.order-lg-2`, `.flex-column`, `.flex-sm-row`, `.d-flex`, `.align-items-center`, `.justify-content-center`, `.justify-content-lg-start`, `.justify-content-lg-end`, `.ms-auto`, `.me-2`, `.gap-2`, `.gap-3`, `.mt-3`, `.mt-4`, `.mt-lg-0`, `.mt-auto`, `.mb-2`, `.mb-3`, `.mb-4`, `.mb-5`, `.my-lg-5`, `.py-3`, `.py-5`, `.px-4`, `.h-100`. 
 - **Componentes Base da Navbar:** `.navbar`, `.navbar-expand-lg`, `.navbar-brand`, `.navbar-nav`, `.nav-item`, `.nav-link`, `.collapse`, `.navbar-collapse`, `.bg-transparent`, `.border-bottom`.
-- **Componentes de Conteúdo (Cards e Badges):** `.card`, `.card-body`, `.card-title`, `.card-text`, `.border-0`, `.badge`, `.text-bg-primary`, `.text-bg-success`, `.text-bg-warning`, `.text-bg-info`.
-- **Botões e Ícones:** `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-dark`, `.btn-outline-primary`, `.btn-outline-dark`, `.btn-lg`, ícones `.bi` (Bootstrap Icons).
-- **Tipografia, Cores e Estilo:** `.display-4`, `.display-6`, `.lead`, `.fw-bold`, `.fw-medium`, `.fs-4`, `.fs-2`, `.text-primary`, `.text-body`, `.text-body-secondary`, `.text-center`, `.text-lg-start`, `.bg-light`, `.rounded-3`, `.shadow-sm`, `.img-fluid`, `.w-100`.
-- **Responsividade de Visibilidade:** `.d-lg-none`, `.d-lg-flex` para controlar a exibição em diferentes breakpoints.
+- **Componentes de Conteúdo (Cards, Badges e Tabelas):** `.card`, `.card-body`, `.card-title`, `.card-text`, `.border-0`, `.badge`, `.text-bg-primary`, `.text-bg-success`, `.text-bg-warning`, `.text-bg-info`, `.table`, `.table-responsive`, `.table-striped`, `.table-hover`, `.table-dark`, `.align-middle`.
+- **Formulários:** `.form-label`, `.form-control`, `.form-select`, `.input-group`, `.input-group-text`, `.form-check`, `.form-check-inline`, `.form-check-input`, `.form-check-label`, `.is-valid`, `.is-invalid`, `.valid-feedback`, `.invalid-feedback`.
+- **Botões e Ícones:** `.btn`, `.btn-primary`, `.btn-secondary`, `.btn-danger`, `.btn-dark`, `.btn-outline-primary`, `.btn-outline-dark`, `.btn-lg`, ícones `.bi` (Bootstrap Icons).
+- **Tipografia, Cores e Estilo:** `.display-4`, `.display-6`, `.lead`, `.fw-bold`, `.fw-medium`, `.fs-4`, `.fs-2`, `.text-primary`, `.text-body`, `.text-body-secondary`, `.text-center`, `.text-lg-start`, `.bg-light`, `.bg-body`, `.rounded-3`, `.shadow-sm`, `.img-fluid`, `.w-100`.
+- **Responsividade de Visibilidade:** `.d-lg-none`, `.d-lg-flex`, `.d-block` para controlar a exibição em diferentes breakpoints.
 
 ## CSS Customizado: Onde e Por Quê?
 
