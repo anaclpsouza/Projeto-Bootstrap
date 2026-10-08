@@ -174,3 +174,9 @@
 .modal-state:checked + .custom-modal .custom-modal-dialog {
     transform: translateY(0);
 }
+
+/* Força a cor primária no item ativo da sidebar */
+.nav-pills .nav-link.active {
+    background-color: var(--bs-primary) !important;
+    color: white !important;
+}
